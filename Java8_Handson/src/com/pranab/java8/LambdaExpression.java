@@ -3,7 +3,6 @@ package com.pranab.java8;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.function.Function;
 import java.util.function.IntFunction;
 import java.util.stream.Stream;
 
@@ -13,12 +12,14 @@ class LambdaExpression {
 		/*
 		 * 1. Simple example of lambda expression
 		 */
+		System.out.println("1. =====================================");
 		Task task = name -> 	System.out.println("Task assigned for " + name);
 		task.assignTask("Pranab");
 		
 		/*
 		 * 2 .Foreach Loop lambda expression
 		 */
+		System.out.println("2. =====================================");
 		String[] name = {"Helen", "Joie", "Tom" };
 		List<String> list = Arrays.asList(name);
 		
@@ -30,6 +31,7 @@ class LambdaExpression {
 		/*
 		 * 3. Thread using lambda expression
 		 */
+		System.out.println("3. =====================================");
 		new Thread(
 				() -> System.out.println("Thread is running...")
 		).start();
@@ -37,7 +39,7 @@ class LambdaExpression {
 		/*
 		 * 4. Comparator using lambda expression
 		 */
-		
+		System.out.println("4. =====================================");
 		Student[] students = {new Student("Tamal", "Seven", 540), new Student("Rakesh", "Seven", 490), new Student("Emon", "Seven", 543)};
 		List<Student> studentList = Arrays.asList(students);
 		
